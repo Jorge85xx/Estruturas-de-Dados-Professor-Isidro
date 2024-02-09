@@ -1,7 +1,7 @@
-package stack;
+package main.stack;
 
-import stack.exceptions.EmptyStackException;
-import stack.exceptions.FullStackException;
+import main.stack.exceptions.EmptyStackException;
+import main.stack.exceptions.FullStackException;
 
 public class Stack {
 
@@ -17,7 +17,7 @@ public class Stack {
             top++;
             values[top] = element;
         }else{
-            throw new EmptyStackException("the stack is empty, stack something first");
+            throw new FullStackException("the main.stack is full, pop something first.");
         }
     }
 
@@ -35,7 +35,7 @@ public class Stack {
             top--;
             return elem;
         }else {
-            throw new FullStackException("the stack is full, pop something first");
+            throw new EmptyStackException("the main.stack is empty, push something first.");
         }
 
     }

@@ -1,6 +1,6 @@
-package stack.exercises;
+package main.stack.exercises;
 
-import stack.Stack;
+import main.stack.Stack;
 
 //This class will be used to convert decimal to binary
 public class ConverterToBinary {
@@ -13,12 +13,12 @@ public class ConverterToBinary {
         //phase 1 - stacking
         while(number != 0){
             rest = number % 2; // i take the remainder of this division by 2
-            s.push(rest); //storage in the stack
+            s.push(rest); //storage in the main.stack
             number = number/2;
         }
         //phase 2 - unstacking
         while (!s.isEmpty()){
-            rest = s.pop(); // Remove the guy at the top from the stack
+            rest = s.pop(); // Remove the guy at the top from the main.stack
             System.out.print(rest);
         }
         System.out.println("\nend of program");

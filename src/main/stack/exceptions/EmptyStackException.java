@@ -1,4 +1,4 @@
-package stack.exceptions;
+package main.stack.exceptions;
 
 public class EmptyStackException extends RuntimeException {
     public EmptyStackException(String message){
