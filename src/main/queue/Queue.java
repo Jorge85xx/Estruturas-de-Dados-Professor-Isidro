@@ -19,7 +19,7 @@ public class Queue {
     public void add(int number){
         if(!isFull()){
             values[this.end] = number;
-            this.end = (this.end+1)%10; //assim zero vai sempre ir de 1 ate 9, ja que 10/10 é resto 0 e qualquer numero abaixo vai sobrar ele mesemo
+            this.end = (this.end+1)%10; //Thus, zero will always go from 1 to 9, since 10/10 is remainder 0, and any number below will remain itself.
             this.total++;
         }else{
             throw new FullQueueException("The main.queue is full, remove something first.");
