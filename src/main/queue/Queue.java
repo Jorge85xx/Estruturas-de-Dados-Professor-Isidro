@@ -45,4 +45,8 @@ public class Queue {
         return (this.total == 10);
     }
 
+    public int size(){
+        return this.total;
+    }
+
 }
